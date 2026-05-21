@@ -1,79 +1,100 @@
-type: collection.insomnia.rest/5.0
-schema_version: "5.1"
-name: Labo03PNC
-meta:
-  id: wrk_89fa6023bf1e4f688bc527dc0b964cd5
-  created: 1778112486997
-  modified: 1779338730369
-  description: ""
-collection:
-  - url: http://localhost:8080/api/specimens
-    name: New Request
-    meta:
-      id: req_9a316eaa83a0482a88387df846f40b8a
-      created: 1778112676842
-      modified: 1779338458461
-      isPrivate: false
-      description: ""
-      sortKey: -1778112676842
-    method: POST
-    body:
-      mimeType: application/json
-      text: |-
+{
+  "type": "collection.insomnia.rest/5.0",
+  "schema_version": "5.1",
+  "name": "Labo03PNC",
+  "meta": {
+    "id": "wrk_89fa6023bf1e4f688bc527dc0b964cd5",
+    "created": 1778112486997,
+    "modified": 1779338730369,
+    "description": ""
+  },
+  "collection": [
+    {
+      "url": "http://localhost:8080/api/specimens",
+      "name": "New Request",
+      "meta": {
+        "id": "req_9a316eaa83a0482a88387df846f40b8a",
+        "created": 1778112676842,
+        "modified": 1779338458461,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1778112676842
+      },
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"kuba\",\n  \"region\": \"santaana\",\n  \"dangerLevel\": 8,\n  \"isFriendly\": false\n}"
+      },
+      "headers": [
         {
-          "name": "kuba",
-          "region": "santaana",
-          "dangerLevel": 8,
-          "isFriendly": false
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/12.5.0",
+          "description": "",
+          "disabled": false
         }
-    headers:
-      - name: Content-Type
-        value: application/json
-      - name: User-Agent
-        value: insomnia/12.5.0
-        description: ""
-        disabled: false
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-  - url: http://localhost:8080/api/specimens
-    name: New Request
-    meta:
-      id: req_11624f2469a142c98f04c284b892455a
-      created: 1779338350914
-      modified: 1779338360252
-      isPrivate: false
-      description: ""
-      sortKey: -1779338350914
-    method: GET
-    headers:
-      - name: User-Agent
-        value: insomnia/12.5.0
-        description: ""
-        disabled: false
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-cookieJar:
-  name: Default Jar
-  meta:
-    id: jar_f160184eaba8ceadf153e51068171495ae010365
-    created: 1778112487004
-    modified: 1778112487004
-environments:
-  name: Base Environment
-  meta:
-    id: env_f160184eaba8ceadf153e51068171495ae010365
-    created: 1778112487001
-    modified: 1778112487001
-    isPrivate: false
+      ],
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    },
+    {
+      "url": "http://localhost:8080/api/specimens",
+      "name": "New Request",
+      "meta": {
+        "id": "req_11624f2469a142c98f04c284b892455a",
+        "created": 1779338350914,
+        "modified": 1779338360252,
+        "isPrivate": false,
+        "description": "",
+        "sortKey": -1779338350914
+      },
+      "method": "GET",
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/12.5.0",
+          "description": "",
+          "disabled": false
+        }
+      ],
+      "settings": {
+        "renderRequestBody": true,
+        "encodeUrl": true,
+        "followRedirects": "global",
+        "cookies": {
+          "send": true,
+          "store": true
+        },
+        "rebuildPath": true
+      }
+    }
+  ],
+  "cookieJar": {
+    "name": "Default Jar",
+    "meta": {
+      "id": "jar_f160184eaba8ceadf153e51068171495ae010365",
+      "created": 1778112487004,
+      "modified": 1778112487004
+    }
+  },
+  "environments": {
+    "name": "Base Environment",
+    "meta": {
+      "id": "env_f160184eaba8ceadf153e51068171495ae010365",
+      "created": 1778112487001,
+      "modified": 1778112487001,
+      "isPrivate": false
+    }
+  }
+}
