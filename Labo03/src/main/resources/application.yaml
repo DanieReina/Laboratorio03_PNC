@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Labo03
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Productos
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+
